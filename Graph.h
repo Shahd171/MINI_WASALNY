@@ -6,7 +6,7 @@
 #include "Edge.h"
 #include<queue>
 #define el '\n'
-#define oo INT_MAX
+#define oo 1000000000
 #ifndef MINIWASALNY_GRAPH_H
 #define MINIWASALNY_GRAPH_H
 
@@ -20,8 +20,8 @@ public:
     //DataMembers
     vector<Vertex> vertices;
     bool visited[N]={ };
-    int Floyd_Arr[50][50];
-    int adj_matrix[50][50];
+    int Floyd_Arr[100][100];
+    int adj_matrix[100][100];
     int cunt=0;
     unordered_map<int, string>id;
     int graphid,weight;
